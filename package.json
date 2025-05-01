@@ -42,6 +42,7 @@
   "dependencies": {
     "@gradio/client": "^1.14.2",
     "@modelcontextprotocol/sdk": "1.9.0",
+    "mcp-evals": "1.0.18",
     "mime": "^4.0.7",
     "minimist": "^1.2.8"
   },

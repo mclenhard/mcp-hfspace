@@ -60,6 +60,15 @@ An example configuration for using a modern image generator, vision model and te
 
 To use private spaces, supply your Hugging Face Token with either the `--hf-token=hf_...` argument or `HF_TOKEN` environment variable.
 
+
+
+## Running evals
+
+The evals package loads an mcp client that then runs the index.ts file, so there is no need to rebuild between tests. You can load environment variables by prefixing the npx command. Full documentation can be found [here](https://www.mcpevals.io/docs).
+
+```bash
+OPENAI_API_KEY=your-key  npx mcp-eval src/evals/evals.ts src/endpoint_wrapper.ts
+```
 It's possible to run multiple server instances to use different working directories and tokens if needed.
 
 ## File Handling and Claude Desktop Mode
